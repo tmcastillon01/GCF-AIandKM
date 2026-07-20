@@ -246,6 +246,16 @@ section:nth-child(even) { background: var(--panel); }
 }
 .about-body p { color: var(--muted); margin-bottom: 1.2rem; }
 .about-body strong { color: var(--ink); font-weight: 600; }
+.pillar-grid { display: grid; gap: 1rem; margin-top: 1.6rem; }
+.pillar-card {
+  display: grid; grid-template-columns: auto 1fr; gap: 0.2rem 0.9rem;
+  background: var(--panel-2); border: 1px solid var(--border);
+  border-left: 3px solid var(--signal); border-radius: var(--radius);
+  padding: 1rem 1.2rem;
+}
+.pillar-icon { grid-row: span 2; font-size: 1.3rem; align-self: center; }
+.pillar-title { font-weight: 600; font-size: 0.92rem; color: var(--ink); align-self: end; }
+.pillar-body { font-size: 0.85rem; color: var(--muted); line-height: 1.6; }
 .about-meta { display: flex; flex-direction: column; gap: 1.2rem; }
 .meta-item { border-left: 2px solid var(--signal); padding-left: 1rem; }
 .meta-label { font-family: var(--mono); font-size: 0.68rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--signal); }
